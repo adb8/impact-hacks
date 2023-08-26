@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	margin: 0px;
+	height: 100vh;
+	width: 100vw;
+}
+
+body {
+	background-image: linear-gradient(
+		180deg,
+		rgba(51, 71.4, 255, 0.61) 0%,
+		rgba(135.37, 229.68, 229.68, 0.65) 100%
+	);
+	background-size: 100vw 100 vh;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	margin: 0px;
+	font-family: "Manrope", sans-serif;
+}
+
+.page-cont {
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar-text {
+	padding: 20px;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.navbar-cont {
+	margin-left: 50px;
+	margin-right: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar-image {
+	padding: 10px;
+}
+
+.font-extrabold {
+	font-weight: 800;
+}
+
+.page-cont {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.first-home-cont {
+	flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-home-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-intro-cont {
+    margin-right: 56px;
+}
+
+.welcome-text {
+    font-size: 50px;
+}
+
+.hacks-text {
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: -15px;
+}
+
+.joinus-text {
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.nocoding-text {
+    margin-top: 25px;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.home-intro-button-cont {
+    display: flex;
+}
+
+.home-intro-button-wrapper {
+    width: 240px;
+    height: 60px;
+    background-color: #5881EA;
+    border-radius: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-intro-button-wrapper:first-child {
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+	.navbar-image-cont {
+		display: none;
+	}
+
+	.navbar-cont {
+		justify-content: center;
+	}
+}
