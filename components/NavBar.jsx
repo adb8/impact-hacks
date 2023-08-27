@@ -4,52 +4,52 @@ import Link from "next/link";
 
 const Navbar = ({ active }) => {
 	return (
-		<nav className="navbar-cont flex items-center justify-between">
+		<nav className="navbar-cont flex flex-row items-center justify-between">
 			<div className="navbar-image-cont flex items-center">
 				<Link className="navbar-image" href="#">
-					<Image src={"/discord_logo.png"} width={30} height={30}></Image>
+					<Image src={"/logos/discord_logo.png"} width={30} height={30}></Image>
 				</Link>
 				<Link className="navbar-image" href="#">
-					<Image src={"/insta_logo.png"} width={30} height={30}></Image>
+					<Image src={"/logos/insta_logo.png"} width={30} height={30}></Image>
 				</Link>
 				<Link className="navbar-image" href="#">
-					<Image src={"/form_logo.png"} width={30} height={30}></Image>
+					<Image src={"/logos/form_logo.png"} width={28} height={28}></Image>
 				</Link>
 			</div>
 			<div className="navbar-text-cont flex items-center">
 				<Link
 					className={`navbar-text ${active === "Home" ? "font-extrabold" : ""}`}
-					href="#"
+					href="/home"
 				>
 					Home
 				</Link>
 				<Link
 					className={`navbar-text ${active === "About" ? "font-extrabold" : ""}`}
-					href="#"
+					href="/about"
 				>
 					About
 				</Link>
 				<Link
 					className={`navbar-text ${active === "Rules" ? "font-extrabold" : ""}`}
-					href="#"
+					href="/rules"
 				>
 					Rules
 				</Link>
 				<Link
 					className={`navbar-text ${active === "Criteria" ? "font-extrabold" : ""}`}
-					href="#"
+					href="/criteria"
 				>
 					Criteria
 				</Link>
 				<Link
 					className={`navbar-text ${active === "Schedule" ? "font-extrabold" : ""}`}
-					href="#"
+					href="/schedule"
 				>
 					Schedule
 				</Link>
 				<Link
 					className={`navbar-text ${active === "Prizes" ? "font-extrabold" : ""}`}
-					href="#"
+					href="/prizes"
 				>
 					Prizes
 				</Link>
