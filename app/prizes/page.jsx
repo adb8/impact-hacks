@@ -11,9 +11,9 @@ export default function Home() {
 				<div className="flex flex-col items-center justify-center">
 					<p className="header-text">Winning Prizes</p>
 					<div className="prizes-cont flex flex-row justify-between">
-						<Image src={"/prize2_frame.png"} width={330} height={330} />
-						<Image src={"/prize1_frame.png"} width={330} height={330} />
-						<Image src={"/prize3_frame.png"} width={330} height={330} />
+						<Image src={"/prizes/prize2_frame.png"} width={330} height={330} />
+						<Image src={"/prizes/prize1_frame.png"} width={330} height={330} />
+						<Image src={"/prizes/prize3_frame.png"} width={330} height={330} />
 					</div>
 				</div>
 			</div>
