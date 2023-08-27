@@ -18,37 +18,37 @@ const Navbar = ({ active }) => {
 			</div>
 			<div className="navbar-text-cont flex items-center">
 				<Link
-					className={`navbar-text ${active === "Home" ? "font-extrabold" : ""}`}
+					className={`navbar-text ${active === "Home" ? "nav-item-active" : ""}`}
 					href="/home"
 				>
 					Home
 				</Link>
 				<Link
-					className={`navbar-text ${active === "About" ? "font-extrabold" : ""}`}
+					className={`navbar-text ${active === "About" ? "nav-item-active" : ""}`}
 					href="/about"
 				>
 					About
 				</Link>
 				<Link
-					className={`navbar-text ${active === "Rules" ? "font-extrabold" : ""}`}
+					className={`navbar-text ${active === "Rules" ? "nav-item-active" : ""}`}
 					href="/rules"
 				>
 					Rules
 				</Link>
 				<Link
-					className={`navbar-text ${active === "Criteria" ? "font-extrabold" : ""}`}
+					className={`navbar-text ${active === "Criteria" ? "nav-item-active" : ""}`}
 					href="/criteria"
 				>
 					Criteria
 				</Link>
 				<Link
-					className={`navbar-text ${active === "Schedule" ? "font-extrabold" : ""}`}
+					className={`navbar-text ${active === "Schedule" ? "nav-item-active" : ""}`}
 					href="/schedule"
 				>
 					Schedule
 				</Link>
 				<Link
-					className={`navbar-text ${active === "Prizes" ? "font-extrabold" : ""}`}
+					className={`navbar-text ${active === "Prizes" ? "nav-item-active" : ""}`}
 					href="/prizes"
 				>
 					Prizes
