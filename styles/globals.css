@@ -20,6 +20,10 @@ body {
 	animation: gradient 15s ease infinite;
 }
 
+* {
+	overflow: hidden;
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -89,12 +93,14 @@ body {
 
 .welcome-text {
 	font-size: 50px;
+	white-space: nowrap;
 }
 
 .hacks-text {
 	font-size: 50px;
 	font-weight: 800;
 	margin-top: -15px;
+	white-space: nowrap;
 }
 
 .joinus-text {
@@ -113,8 +119,8 @@ body {
 .home-intro-button-wrapper {
 	transition: background-color 0.5s ease;
 	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
-    background-color: #5881ea;
-    
+	background-color: #5881ea;
+
 	width: 240px;
 	height: 60px;
 	border-radius: 15px;
@@ -154,7 +160,7 @@ body {
 	width: 350px;
 
 	background: linear-gradient(190deg, rgba(125, 158, 250, 0.7) 0%, rgba(132, 206, 248, 0.7) 100%);
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
 
 	display: flex;
 	flex-direction: column;
@@ -172,24 +178,26 @@ body {
 .header-text {
 	font-size: 40px;
 	font-weight: 700;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
+	text-align: center;
 }
 
 .footer-text {
 	font-size: 22px;
 	margin-top: 35px;
+	text-align: center;
 }
 
 .rules-cont {
 	position: relative;
-	width: 960px;
-	height: 380px;
+	width: 940px;
+	height: 360px;
 }
 
 .criteria-cont {
 	position: relative;
-	width: 960px;
-	height: 340px;
+	width: 940px;
+	height: 320px;
 }
 
 .rules-cont img,
@@ -239,7 +247,7 @@ img {
 
 .bg-bubbles {
 	position: absolute;
-    z-index: -1;
+	z-index: -1;
 
 	top: 0;
 	left: 0;
@@ -254,7 +262,7 @@ img {
 
 	width: 40px;
 	height: 40px;
-    bottom: -160px;
+	bottom: -160px;
 
 	background-color: rgba(109, 83, 255, 0.15);
 	-webkit-animation: square 25s infinite;
@@ -359,9 +367,9 @@ img {
 		height: 180px;
 		width: 320px;
 
-        margin-right: 0px;
+		margin-right: 0px;
 		margin-bottom: 25px;
-        padding: 25px;
+		padding: 25px;
 
 		align-items: center;
 		text-align: center;
@@ -429,11 +437,12 @@ img {
 	.rules-cont img,
 	.criteria-cont img {
 		position: static;
-		width: 380px;
-		margin-bottom: 25px;
+		width: 420px;
+		margin-bottom: 30px;
 	}
 
-	.rules-cont img:nth-child(4) {
+	.rules-cont img:nth-child(4),
+	.criteria-cont img:nth-child(4) {
 		margin-bottom: 0px;
 	}
 }
@@ -445,36 +454,14 @@ img {
 
 	.navbar-cont {
 		justify-content: center;
+		padding-right: 0px;
+		padding-left: 0px;
 	}
 
-	.bg-bubbles li:nth-child(10) {
-		width: 100px;
-		height: 100px;
-		left: 60%;
-	}
-
-	.bg-bubbles li:nth-child(6) {
-		left: 40%;
-	}
-
-	.bg-bubbles li:nth-child(5) {
-		left: 50%;
-	}
-
-	.bg-bubbles li:nth-child(1) {
-		left: 30%;
-	}
-
-	.bg-bubbles li:nth-child(2) {
-		left: 30%;
-	}
-
-	.bg-bubbles li:nth-child(2) {
-		left: 35%;
-	}
-
-	.bg-bubbles li:nth-child(2) {
-		left: 28%;
+	.navbar-text-cont {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
 	}
 }
 
@@ -483,7 +470,7 @@ img {
 		position: static;
 		flex-direction: column;
 		justify-content: start;
-		height: 560px;
+		height: 540px;
 	}
 
 	.prizes-cont img:nth-child(2) {
@@ -496,14 +483,15 @@ img {
 
 	.prizes-cont img {
 		margin: 0;
-		margin-bottom: -20px;
+		margin-bottom: -30px;
 		width: 200px;
 		height: 200px;
 	}
 
 	.header-text {
 		font-size: 32px;
-		margin-bottom: 20px;
+		margin-bottom: 18px;
+		line-height: 1.2;
 	}
 
 	.hacks-text,
@@ -514,7 +502,7 @@ img {
 	.joinus-text,
 	.nocoding-text {
 		font-size: 20px;
-        padding: 0 10px;
+		padding: 0 10px;
 		width: 400px;
 	}
 
@@ -543,7 +531,7 @@ img {
 	}
 
 	.navbar-text {
-        padding: 0 6px;
+		padding: 15px 0px;
 		font-size: 17px;
 	}
 
@@ -554,6 +542,16 @@ img {
 	.rules-cont,
 	.criteria-cont {
 		width: 350px;
+	}
+
+	.rules-cont img,
+	.criteria-cont img {
+		margin-bottom: 20px;
+	}
+
+	.rules-cont img:nth-child(4),
+	.criteria-cont img:nth-child(4) {
+		margin-bottom: 0px;
 	}
 
 	.about-break {
@@ -569,6 +567,7 @@ img {
 	}
 
 	.footer-text {
+		margin-top: 25px;
 		font-size: 18px;
 	}
 }

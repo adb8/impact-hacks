@@ -15,6 +15,7 @@ export default function Home() {
 						src={"/schedule_frame.png"}
 						width={280}
 						height={10}
+						alt="The official schedule for this Hackathon"
 					/>
 					<p className="footer-text">Dates may be subject to change</p>
 				</div>

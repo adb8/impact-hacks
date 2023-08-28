@@ -46,6 +46,7 @@ export default function Home() {
 							src={"/logos/impacthacks_logo.png"}
 							width={550}
 							height={545}
+							alt="The official logo for Impact Hacks"
 						/>
 					</div>
 				</div>

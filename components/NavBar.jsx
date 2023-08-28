@@ -7,13 +7,28 @@ const Navbar = ({ active }) => {
 		<nav className="navbar-cont flex flex-row items-center justify-between">
 			<div className="navbar-image-cont flex items-center">
 				<Link className="navbar-image" href="#">
-					<Image src={"/logos/discord_logo.png"} width={30} height={30}></Image>
+					<Image
+						src={"/logos/discord_logo.png"}
+						width={30}
+						height={30}
+						alt="Link to our discord server"
+					></Image>
 				</Link>
 				<Link className="navbar-image" href="#">
-					<Image src={"/logos/insta_logo.png"} width={30} height={30}></Image>
+					<Image
+						src={"/logos/insta_logo.png"}
+						width={30}
+						height={30}
+						alt="Link to our instagram page"
+					></Image>
 				</Link>
 				<Link className="navbar-image" href="#">
-					<Image src={"/logos/form_logo.png"} width={28} height={28}></Image>
+					<Image
+						src={"/logos/form_logo.png"}
+						width={28}
+						height={28}
+						alt="Link to our registration form"
+					></Image>
 				</Link>
 			</div>
 			<div className="navbar-text-cont flex items-center">

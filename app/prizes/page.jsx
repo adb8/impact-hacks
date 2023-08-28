@@ -11,9 +11,24 @@ export default function Home() {
 				<div className="flex flex-col items-center justify-center">
 					<p className="header-text">Winning Prizes</p>
 					<div className="prizes-cont flex flex-row justify-between">
-						<Image src={"/prizes/prize2_frame.png"} width={330} height={330} />
-						<Image src={"/prizes/prize1_frame.png"} width={330} height={330} />
-						<Image src={"/prizes/prize3_frame.png"} width={330} height={330} />
+						<Image
+							src={"/prizes/prize2_frame.png"}
+							width={330}
+							height={330}
+							alt="Second place prize for Hackathon submissions"
+						/>
+						<Image
+							src={"/prizes/prize1_frame.png"}
+							width={330}
+							height={330}
+							alt="First place prize for Hackathon submissions"
+						/>
+						<Image
+							src={"/prizes/prize3_frame.png"}
+							width={330}
+							height={330}
+							alt="Third place prize for Hackathon submissions"
+						/>
 					</div>
 				</div>
 			</div>
