@@ -16,14 +16,6 @@ const Navbar = ({ active }) => {
 				</Link>
 				<Link className="navbar-image" href="#">
 					<Image
-						src={"/logos/insta_logo.png"}
-						width={30}
-						height={30}
-						alt="Link to our instagram page"
-					></Image>
-				</Link>
-				<Link className="navbar-image" href="#">
-					<Image
 						src={"/logos/form_logo.png"}
 						width={28}
 						height={28}

@@ -25,7 +25,7 @@ export default function Home() {
 						<p className="welcome-text">Welcome to</p>
 						<p className="hacks-text">Impact Hacks</p>
 						<p className="joinus-text">
-							Join us in a week-long hackathon to build something socially impactful
+							Join us in a week-long virtual hackathon to build something socially impactful
 							for your community!
 						</p>
 						<p className="nocoding-text">

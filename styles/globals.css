@@ -184,7 +184,6 @@ body {
 
 .footer-text {
 	font-size: 22px;
-	margin-top: 35px;
 	text-align: center;
 }
 
@@ -346,6 +345,10 @@ img {
 
 .about-break {
 	display: none;
+}
+
+.schedule-img {
+    margin-bottom: 35px;
 }
 
 @keyframes square {
@@ -564,10 +567,10 @@ img {
 
 	.schedule-img {
 		width: 230px;
+        margin-bottom: 25px;
 	}
 
 	.footer-text {
-		margin-top: 25px;
 		font-size: 18px;
 	}
 }
