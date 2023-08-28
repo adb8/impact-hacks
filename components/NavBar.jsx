@@ -6,7 +6,7 @@ const Navbar = ({ active }) => {
 	return (
 		<nav className="navbar-cont flex flex-row items-center justify-between">
 			<div className="navbar-image-cont flex items-center">
-				<Link className="navbar-image" href="#">
+				<Link className="navbar-image" href="https://discord.gg/jGWZTEd2Pj">
 					<Image
 						src={"/logos/discord_logo.png"}
 						width={30}
@@ -14,7 +14,7 @@ const Navbar = ({ active }) => {
 						alt="Link to our discord server"
 					></Image>
 				</Link>
-				<Link className="navbar-image" href="#">
+				<Link className="navbar-image" href="https://forms.gle/Lqrg8sxtdoDoLYNU6">
 					<Image
 						src={"/logos/form_logo.png"}
 						width={28}

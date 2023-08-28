@@ -33,10 +33,10 @@ export default function Home() {
 							prizes!
 						</p>
 						<div className="button-cont flex">
-							<Button text="Join the Discord" link="https://discord.gg/S4SFrabY" />
+							<Button text="Join the Discord" link="https://discord.gg/jGWZTEd2Pj" />
 							<Button
 								text="Register Here"
-								link="https://docs.google.com/forms/d/1I7Kw2G_SJ4wSpqL59sAj8o6ozuR-BSlutn0zp2PnSrs/viewform?ts=64e92a01&edit_requested=true"
+								link="https://forms.gle/Lqrg8sxtdoDoLYNU6"
 							/>
 						</div>
 					</div>
