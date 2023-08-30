@@ -12,12 +12,12 @@ export default function Home() {
 					<p className="header-text">Hackathon Schedule</p>
 					<Image
 						className="schedule-img"
-						src={"/schedule_frame.png"}
+						src="/schedule_frame.png"
 						width={280}
 						height={10}
 						alt="The official schedule for this Hackathon"
 					/>
-					<p className="footer-text">All times are 11:59 PM EST</p>
+					<p className="footer-text">All times are <span className="font-extrabold">10:00 AM EST</span></p>
 					<p className="footer-text">Dates may be subject to change</p>
 				</div>
 			</div>

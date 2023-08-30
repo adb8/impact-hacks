@@ -12,25 +12,25 @@ export default function Home() {
 					<p className="header-text">Hackathon Rules</p>
 					<div className="rules-cont">
 						<Image
-							src={"/rules/rule1_frame.png"}
+							src="/rules/rule1_frame.png"
 							width={450}
 							height={150}
 							alt="First rule for appropriate Hackathon participation and conduct"
 						/>
 						<Image
-							src={"/rules/rule2_frame.png"}
+							src="/rules/rule2_frame.png"
 							width={450}
 							height={150}
 							alt="Second rule for appropriate Hackathon participation and conduct"
 						/>
 						<Image
-							src={"/rules/rule3_frame.png"}
+							src="/rules/rule3_frame.png"
 							width={450}
 							height={150}
 							alt="Third rule for appropriate Hackathon participation and conduct"
 						/>
 						<Image
-							src={"/rules/rule4_frame.png"}
+							src="/rules/rule4_frame.png"
 							width={450}
 							height={150}
 							alt="Fourth rule for appropriate Hackathon participation and conduct"

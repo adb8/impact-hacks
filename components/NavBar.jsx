@@ -6,22 +6,38 @@ const Navbar = ({ active }) => {
 	return (
 		<nav className="navbar-cont flex flex-row items-center justify-between">
 			<div className="navbar-image-cont flex items-center">
-				<Link className="navbar-image" href="https://discord.gg/jGWZTEd2Pj">
+				<a className="navbar-image" href="https://discord.gg/jGWZTEd2Pj" target="_blank">
 					<Image
 						src={"/logos/discord_logo.png"}
-						width={30}
-						height={30}
-						alt="Link to our discord server"
-					></Image>
-				</Link>
-				<Link className="navbar-image" href="https://forms.gle/Lqrg8sxtdoDoLYNU6">
-					<Image
-						src={"/logos/form_logo.png"}
 						width={28}
 						height={28}
+						alt="Link to our discord server"
+					></Image>
+				</a>
+				<a
+					className="navbar-image"
+					href="https://forms.gle/Lqrg8sxtdoDoLYNU6"
+					target="_blank"
+				>
+					<Image
+						src={"/logos/form_logo.png"}
+						width={26}
+						height={26}
 						alt="Link to our registration form"
 					></Image>
-				</Link>
+				</a>
+				<a
+					className="navbar-image"
+					href="https://impact-hacks-2023.devpost.com/"
+					target="_blank"
+				>
+					<Image
+						src={"/logos/devpost_logo.png"}
+						width={30}
+						height={30}
+						alt="Link to our Devpost posting"
+					></Image>
+				</a>
 			</div>
 			<div className="navbar-text-cont flex items-center">
 				<Link

@@ -12,25 +12,25 @@ export default function Home() {
 					<p className="header-text">Judging Criteria</p>
 					<div className="criteria-cont">
 						<Image
-							src={"/criteria/criteria1_frame.png"}
+							src="/criteria/criteria1_frame.png"
 							width={450}
 							height={150}
 							alt="First criteria for Hackathon project judgement"
 						/>
 						<Image
-							src={"/criteria/criteria2_frame.png"}
+							src="/criteria/criteria2_frame.png"
 							width={450}
 							height={150}
 							alt="Second criteria for Hackathon project judgement"
 						/>
 						<Image
-							src={"/criteria/criteria3_frame.png"}
+							src="/criteria/criteria3_frame.png"
 							width={450}
 							height={150}
 							alt="Third criteria for Hackathon project judgement"
 						/>
 						<Image
-							src={"/criteria/criteria4_frame.png"}
+							src="/criteria/criteria4_frame.png"
 							width={450}
 							height={150}
 							alt="Fourth criteria for Hackathon project judgement"
