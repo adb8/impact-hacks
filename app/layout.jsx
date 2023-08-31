@@ -3,8 +3,8 @@ import "@styles/globals.css";
 export const metadata = {
 	title: "Impact Hacks",
 	description: "Empowering positive impact through innovative hacks.",
-	keywords: "impact hacks, innovation, hackathon, coding, community, social impact, impact, hack",
-	author: "Your Name",
+	keywords:
+		"impact hacks, innovation, hackathon, coding, programming, social impact, coding projects, coding for prizes, devpost impact hacks, beginner friendly, online hackathon, virtual hackathon, hackthon for beginners, hackathon for high schoolers, hackathon for students, no prior coding experience, coding competition",
 };
 
 export default function RootLayout({ children }) {

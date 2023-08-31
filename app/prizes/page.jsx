@@ -15,19 +15,19 @@ export default function Home() {
 							src={"/prizes/prize2_frame.png"}
 							width={330}
 							height={330}
-							alt="Second place prize for Hackathon submissions"
+							alt="Second place prize for Hackathon submissions. This prize is a $50 Amazon gift card."
 						/>
 						<Image
 							src={"/prizes/prize1_frame.png"}
 							width={330}
 							height={330}
-							alt="First place prize for Hackathon submissions"
+							alt="First place prize for Hackathon submissions. This prize is a $100 Amazon gift card."
 						/>
 						<Image
 							src={"/prizes/prize3_frame.png"}
 							width={330}
 							height={330}
-							alt="Third place prize for Hackathon submissions"
+							alt="Third place prize for Hackathon submissions. This prize is a $30 Amazon gift card."
 						/>
 					</div>
 				</div>

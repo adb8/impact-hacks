@@ -15,25 +15,25 @@ export default function Home() {
 							src="/criteria/criteria1_frame.png"
 							width={450}
 							height={150}
-							alt="First criteria for Hackathon project judgement"
+							alt="First criteria for Hackathon project judgement. How unique is your idea or the execution of your idea? Has anyone done this or approached it the way you did?"
 						/>
 						<Image
 							src="/criteria/criteria2_frame.png"
 							width={450}
 							height={150}
-							alt="Second criteria for Hackathon project judgement"
+							alt="Second criteria for Hackathon project judgement. How complete is your project? Can it wholly perform a function? Is it a minimum viable product (MVP)?"
 						/>
 						<Image
 							src="/criteria/criteria3_frame.png"
 							width={450}
 							height={150}
-							alt="Third criteria for Hackathon project judgement"
+							alt="Third criteria for Hackathon project judgement. How impactful is your project? Does it positively affect other people's lives in any way?"
 						/>
 						<Image
 							src="/criteria/criteria4_frame.png"
 							width={450}
 							height={150}
-							alt="Fourth criteria for Hackathon project judgement"
+							alt="Fourth criteria for Hackathon project judgement. Is your project technically advanced? Was it challenging and time consuming to design?"
 						/>
 					</div>
 				</div>

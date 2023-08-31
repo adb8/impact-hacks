@@ -25,8 +25,8 @@ export default function Home() {
 						<p className="welcome-text">Welcome to</p>
 						<p className="hacks-text">Impact Hacks</p>
 						<p className="joinus-text">
-							Join us in a beginner-friendly virtual hackathon to build something socially impactful
-							for your community!
+							Join us in a beginner-friendly virtual hackathon to build something
+							socially impactful for your community!
 						</p>
 						<p className="nocoding-text">
 							No coding experience necessary! Everyone is welcome to compete for
@@ -46,7 +46,7 @@ export default function Home() {
 							src={"/logos/impacthacks_logo.png"}
 							width={550}
 							height={545}
-							alt="The official logo for Impact Hacks"
+							alt="The official logo for Impact Hacks. Join us in a beginner-friendly virtual hackathon to build something socially impactful for your community! No coding experience necessary! Everyone is welcome to compete for prizes!"
 						/>
 					</div>
 				</div>
