@@ -2,9 +2,10 @@ import "@styles/globals.css";
 
 export const metadata = {
 	title: "Impact Hacks",
-	description: "Empowering positive impact through innovative hacks.",
+	description:
+		"Join our beginner-friendly virtual hackathon and build something socially impactful for your community! No coding experience necessary! Everyone is welcome to compete for prizes!",
 	keywords:
-		"impact hacks, innovation, hackathon, coding, programming, social impact, coding projects, coding for prizes, devpost impact hacks, beginner friendly, online hackathon, virtual hackathon, hackthon for beginners, hackathon for high schoolers, hackathon for students, no prior coding experience, coding competition",
+		"impact hacks, innovation, hackathon, coding, programming, social impact, coding projects, coding for prizes, devpost impact hacks, beginner friendly, online hackathon, virtual hackathon, hackthon for beginners, hackathon for high schoolers, hackathon for students, no prior coding experience, coding competition, computer science",
 };
 
 export default function RootLayout({ children }) {
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
 					href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
 					rel="stylesheet"
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/icon.ico" sizes="any" />
 			</head>
 			<body>{children}</body>
 		</html>

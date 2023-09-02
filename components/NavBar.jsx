@@ -11,7 +11,7 @@ const Navbar = ({ active }) => {
 						src={"/logos/discord_logo.png"}
 						width={28}
 						height={28}
-						alt="Link to our discord server. Click here to join the Impact Hacks Discord server."
+						alt="Link to our discord server. Click here to join the Impact Hacks Discord server for updates and announcements on our hackathon."
 					></Image>
 				</a>
 				<a
@@ -23,7 +23,7 @@ const Navbar = ({ active }) => {
 						src={"/logos/form_logo.png"}
 						width={26}
 						height={26}
-						alt="Link to our registration form. Click here to register for our hackathon."
+						alt="Link to our registration form. Click here to register for our hackathon via our Google form."
 					></Image>
 				</a>
 				<a
@@ -35,7 +35,7 @@ const Navbar = ({ active }) => {
 						src={"/logos/devpost_logo.png"}
 						width={30}
 						height={30}
-						alt="Link to our Devpost posting. Click here to learn more about our hackathon."
+						alt="Link to our Devpost posting. Click here to learn more about our hackathon. Make sure to register via Devpost too!"
 					></Image>
 				</a>
 			</div>

@@ -93,14 +93,12 @@ body {
 
 .welcome-text {
 	font-size: 50px;
+	line-height: 60px;
 	white-space: nowrap;
 }
 
 .hacks-text {
-	font-size: 50px;
 	font-weight: 800;
-	margin-top: -15px;
-	white-space: nowrap;
 }
 
 .joinus-text {
@@ -118,7 +116,6 @@ body {
 
 .home-intro-button-wrapper {
 	transition: background-color 0.5s ease;
-	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
 	background-color: #5881ea;
 
 	width: 240px;
@@ -348,7 +345,7 @@ img {
 }
 
 .schedule-img {
-    margin-bottom: 35px;
+	margin-bottom: 35px;
 }
 
 @keyframes square {
@@ -502,6 +499,10 @@ img {
 		font-size: 45px;
 	}
 
+	.welcome-text {
+		line-height: 52px;
+	}
+
 	.joinus-text,
 	.nocoding-text {
 		font-size: 20px;
@@ -522,15 +523,15 @@ img {
 		align-items: center;
 	}
 
-	.home-intro-button-wrapper:first-child {
+	.home-intro-button-wrapper:nth-child(1) {
 		margin: 0px;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
 
 	.home-intro-button-wrapper {
-		width: 200px;
-		height: 50px;
-		font-size: 20px;
+		width: 220px;
+		height: 55px;
+		font-size: 22px;
 	}
 
 	.navbar-text {
@@ -567,7 +568,7 @@ img {
 
 	.schedule-img {
 		width: 230px;
-        margin-bottom: 25px;
+		margin-bottom: 25px;
 	}
 
 	.footer-text {

@@ -1,20 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import NavBar from "@components/NavBar";
 import Bubbles from "@components/Bubbles";
-import Button from "@components/Button";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-	const router = useRouter();
-	useEffect(() => {
-		if (router.pathname != "/" && router.pathname != "/home") {
-			router.push("/");
-		}
-	}, []);
-
 	return (
 		<div className="full-page-cont">
 			<Bubbles />
@@ -22,10 +10,12 @@ export default function Home() {
 			<div className="lower-page-outer-cont">
 				<div className="home-cont flex flex-row items-center justify-content">
 					<div className="home-intro-cont">
-						<p className="welcome-text">Welcome to</p>
-						<p className="hacks-text">Impact Hacks</p>
+						<p className="welcome-text">
+							Welcome to <br />
+							<span className="hacks-text">Impact Hacks</span>
+						</p>
 						<p className="joinus-text">
-							Join us in a beginner-friendly virtual hackathon to build something
+							Join our beginner-friendly virtual hackathon and build something
 							socially impactful for your community!
 						</p>
 						<p className="nocoding-text">
@@ -33,20 +23,29 @@ export default function Home() {
 							prizes!
 						</p>
 						<div className="button-cont flex">
-							<Button text="Join the Discord" link="https://discord.gg/jGWZTEd2Pj" />
-							<Button
-								text="Register Here"
-								link="https://forms.gle/Lqrg8sxtdoDoLYNU6"
-							/>
+							<a
+								className="home-intro-button-wrapper"
+								target="_blank"
+								href="https://discord.gg/jGWZTEd2Pj"
+							>
+								Join the Discord
+							</a>
+							<a
+								className="home-intro-button-wrapper"
+								target="_blank"
+								href="https://forms.gle/Lqrg8sxtdoDoLYNU6"
+							>
+								Register Here
+							</a>
 						</div>
 					</div>
 					<div className="home-logo-cont">
 						<Image
 							className="impact-hacks-img"
-							src={"/logos/impacthacks_logo.png"}
+							src="/logos/impacthacks_logo.png"
 							width={550}
 							height={545}
-							alt="The official logo for Impact Hacks. Join us in a beginner-friendly virtual hackathon to build something socially impactful for your community! No coding experience necessary! Everyone is welcome to compete for prizes!"
+							alt="The official logo for Impact Hacks. Join our beginner-friendly virtual hackathon and build something socially impactful for your community! No coding experience necessary! Everyone is welcome to compete for prizes!"
 						/>
 					</div>
 				</div>
