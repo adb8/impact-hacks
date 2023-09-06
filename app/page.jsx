@@ -12,10 +12,10 @@ export default function Home() {
 					<div className="home-intro-cont">
 						<p className="welcome-text">
 							Welcome to <br />
-							<span className="hacks-text">Impact Hacks</span>
+							<span className="hacks-text">Impact Hacks!</span>
 						</p>
 						<p className="joinus-text">
-							Join our beginner-friendly virtual hackathon and build something
+							Join our beginner-friendly, virtual hackathon and build something
 							socially impactful for your community!
 						</p>
 						<p className="nocoding-text">

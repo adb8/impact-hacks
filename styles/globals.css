@@ -51,10 +51,11 @@ body {
 }
 
 .navbar-text {
-	padding: 15px 20px 15px 20px;
+	padding: 15px;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 17px;
 	transition: background-color 0.5s ease;
+    color: rgba(0, 0, 0, 0.6)
 }
 
 .navbar-text:hover {
@@ -71,7 +72,7 @@ body {
 }
 
 .nav-item-active {
-	color: #7252ff;
+	color: #000000;
 }
 
 .full-page-cont {
@@ -187,13 +188,13 @@ body {
 .rules-cont {
 	position: relative;
 	width: 940px;
-	height: 360px;
+	height: 350px;
 }
 
 .criteria-cont {
 	position: relative;
 	width: 940px;
-	height: 320px;
+	height: 310px;
 }
 
 .rules-cont img,
@@ -459,7 +460,7 @@ img {
 
 	.navbar-text-cont {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		width: 100%;
 	}
 }
@@ -535,7 +536,6 @@ img {
 
 	.navbar-text {
 		padding: 15px 0px;
-		font-size: 17px;
 	}
 
 	.nav-item-active {

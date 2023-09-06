@@ -8,9 +8,9 @@ const Navbar = ({ active }) => {
 			<div className="navbar-image-cont flex items-center">
 				<a className="navbar-image" href="https://discord.gg/jGWZTEd2Pj" target="_blank">
 					<Image
-						src={"/logos/discord_logo.png"}
-						width={28}
-						height={28}
+						src="/logos/discord_logo.png"
+						width={25}
+						height={25}
 						alt="Link to our discord server. Click here to join the Impact Hacks Discord server for updates and announcements on our hackathon."
 					></Image>
 				</a>
@@ -20,9 +20,9 @@ const Navbar = ({ active }) => {
 					target="_blank"
 				>
 					<Image
-						src={"/logos/form_logo.png"}
-						width={26}
-						height={26}
+						src="/logos/form_logo.png"
+						width={23}
+						height={23}
 						alt="Link to our registration form. Click here to register for our hackathon via our Google form."
 					></Image>
 				</a>
@@ -32,9 +32,9 @@ const Navbar = ({ active }) => {
 					target="_blank"
 				>
 					<Image
-						src={"/logos/devpost_logo.png"}
-						width={30}
-						height={30}
+						src="/logos/devpost_logo.png"
+						width={26}
+						height={26}
 						alt="Link to our Devpost posting. Click here to learn more about our hackathon. Make sure to register via Devpost too!"
 					></Image>
 				</a>

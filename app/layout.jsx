@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
 					href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
 					rel="stylesheet"
 				/>
-				<link rel="icon" href="/icon.ico" sizes="any" />
+				<link rel="icon" href="/favicon.ico" />
 			</head>
 			<body>{children}</body>
 		</html>
