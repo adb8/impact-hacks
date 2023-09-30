@@ -1,11 +1,15 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = ({ active }) => {
+	const [hamburgerActive, setHamburgerActive] = useState(false);
+
 	return (
 		<nav className="navbar-cont flex flex-row items-center justify-between">
-			<div className="navbar-image-cont flex items-center">
+			<div className="navbar-img-cont flex items-center">
 				<a className="navbar-image" href="https://discord.gg/jGWZTEd2Pj" target="_blank">
 					<Image
 						src="/logos/discord_logo.png"
@@ -37,6 +41,19 @@ const Navbar = ({ active }) => {
 						height={26}
 						alt="Link to our Devpost posting. Click here to learn more about our hackathon. Make sure to register via Devpost too!"
 					></Image>
+				</a>
+				<a
+					className="navbar-image hamburger-icon"
+					onClick={() => {
+						setHamburgerActive(true);
+					}}
+				>
+					<Image
+						src="/hamburger_icon.png"
+						width={26}
+						height={26}
+						alt="This is a hamburger icon. Tap or click on it to view all of the navigation bar items."
+					/>
 				</a>
 			</div>
 			<div className="navbar-text-cont flex items-center">
@@ -76,7 +93,94 @@ const Navbar = ({ active }) => {
 				>
 					Prizes
 				</Link>
+				<Link
+					className={`navbar-text ${active === "Sponsors" ? "nav-item-active" : ""}`}
+					href="/sponsors"
+				>
+					Sponsors
+				</Link>
 			</div>
+			{hamburgerActive && (
+				<div className="hamburger-menu-cont">
+					<Link
+						className={`hamburger-menu-item ${
+							active === "Home" ? "nav-item-active" : ""
+						}`}
+						href="/home"
+						onClick={() => {
+							setHamburgerActive(false);
+						}}
+					>
+						<div>Home</div>
+					</Link>
+					<Link
+						className={`hamburger-menu-item ${
+							active === "About" ? "nav-item-active" : ""
+						}`}
+						href="/about"
+						onClick={() => {
+							setHamburgerActive(false);
+						}}
+					>
+						<div> About</div>
+					</Link>
+					<Link
+						className={`hamburger-menu-item ${
+							active === "Rules" ? "nav-item-active" : ""
+						}`}
+						href="/rules"
+						onClick={() => {
+							setHamburgerActive(false);
+						}}
+					>
+						<div> Rules</div>
+					</Link>
+					<Link
+						className={`hamburger-menu-item ${
+							active === "Criteria" ? "nav-item-active" : ""
+						}`}
+						href="/criteria"
+						onClick={() => {
+							setHamburgerActive(false);
+						}}
+					>
+						<div>Criteria</div>
+					</Link>
+					<Link
+						className={`hamburger-menu-item ${
+							active === "Schedule" ? "nav-item-active" : ""
+						}`}
+						href="/schedule"
+						onClick={() => {
+							setHamburgerActive(false);
+						}}
+					>
+						<div>Schedule</div>
+					</Link>
+					<Link
+						className={`hamburger-menu-item ${
+							active === "Prizes" ? "nav-item-active" : ""
+						}`}
+						href="/prizes"
+						onClick={() => {
+							setHamburgerActive(false);
+						}}
+					>
+						<div> Prizes</div>
+					</Link>
+					<Link
+						className={`hamburger-menu-item ${
+							active === "Sponsors" ? "nav-item-active" : ""
+						}`}
+						href="/sponsors"
+						onClick={() => {
+							setHamburgerActive(false);
+						}}
+					>
+						<div>Sponsors</div>
+					</Link>
+				</div>
+			)}
 		</nav>
 	);
 };

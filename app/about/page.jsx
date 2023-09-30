@@ -9,10 +9,7 @@ export default function Home() {
 			<NavBar active="About" />
 			<div className="lower-page-outer-cont">
 				<div className="flex flex-col items-center justify-center">
-					<p className="header-text about-header-text">
-						Build and compete
-						<br className="about-break" /> for prizes!
-					</p>
+					<p className="header-text">Build for prizes!</p>
 					<div className="about-card-cont flex flex-row items-center justify-between">
 						<Card
 							header="Build"
@@ -24,7 +21,7 @@ export default function Home() {
 						/>
 						<Card
 							header="Win"
-							content="Submit your creation for evaluation and win prizes! More information on prizes can be found on the Prizes page."
+							content="Submit your creation for evaluation and win prizes!"
 						/>
 					</div>
 				</div>

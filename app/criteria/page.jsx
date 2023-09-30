@@ -4,7 +4,7 @@ import Bubbles from "@components/Bubbles";
 
 export default function Home() {
 	return (
-		<div className="full-page-cont criteria-page">
+		<div className="full-page-cont">
 			<Bubbles />
 			<NavBar active="Criteria" />
 			<div className="lower-page-outer-cont">
