@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+.schi-regular {
+  font-family: "Schibsted Grotesk";
+  font-weight: 400;
+}
+
+.schi-medium {
+  font-family: "Schibsted Grotesk";
+  font-weight: 500;
+}
+
+.schi-semibold {
+  font-family: "Schibsted Grotesk";
+  font-weight: 600;
+}
+
+.schi-bold {
+  font-family: "Schibsted Grotesk";
+  font-weight: 700;
+}
+
+.schi-extrabold {
+  font-family: "Schibsted Grotesk";
+  font-weight: 800;
+}
+
+.schi-black {
+  font-family: "Schibsted Grotesk";
+  font-weight: 900;
+}

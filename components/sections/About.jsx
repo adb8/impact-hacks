@@ -1,22 +1,29 @@
 import React from "react";
-import Card from "@components/elements/Card";
+import AboutCard from "@components/elements/AboutCard";
+import { IoBuild } from "react-icons/io5";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { IoMedalSharp } from "react-icons/io5";
 
 const About = () => {
   return (
-    <div className="lower-page-outer-cont">
-      <div className="flex flex-col items-center justify-center">
-        <p className="header-text">Build for prizes!</p>
-        <div className="about-card-cont flex flex-row items-center justify-between">
-          <Card
-            header="Build"
-            content="Harness your creativity to build a revolutionary and impactful product!"
-          />
-          <Card
-            header="Share"
-            content="Share your creations with peers. Be inspired and inspire others."
-          />
-          <Card header="Win" content="Submit your creation for evaluation and win prizes!" />
-        </div>
+    <div className="py-16 flex flex-col items-center justify-center bg-[rgb(112,169,244)]">
+      <p className="text-[28px] schi-bold text-center mb-2">Build for prizes!</p>
+      <div className="flex flex-col lg:flex-row items-center justify-between">
+        <AboutCard
+          icon={IoBuild}
+          header="Build"
+          content="Harness your creativity to build a revolutionary and impactful product!"
+        />
+        <AboutCard
+          icon={BsFillPeopleFill}
+          header="Share"
+          content="Share your creations with peers. Be inspired and inspire others."
+        />
+        <AboutCard
+          icon={IoMedalSharp}
+          header="Win"
+          content="Submit your creation for evaluation and win prizes!"
+        />
       </div>
     </div>
   );
