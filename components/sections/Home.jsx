@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="flex flex-col lg:flex-row items-center justify-center py-14 background-gradient">
+      className="flex flex-col lg:flex-row items-center justify-center py-16 background-gradient">
       <div className="max-w-[500px] m-5">
         <p className="text-4xl schi-medium text-center lg:text-left">Welcome to</p>
         <p className="text-4xl schi-extrabold text-center lg:text-left">Impact Hacks!</p>

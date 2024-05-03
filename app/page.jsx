@@ -9,7 +9,7 @@ import Schedule from "@components/sections/Schedule";
 
 const App = () => {
   return (
-    <div className="full-page-cont">
+    <div className="area">
       <NavBar />
       <Home />
       <About />

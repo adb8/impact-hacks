@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: #82beff
+  background: #82beff;
 }
 
 * {
@@ -36,6 +36,27 @@ body {
   }
 }
 
-img {
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+::-webkit-scrollbar-track {
+  background: #5f94ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #89b0ff;
+  border-radius: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+}
+

@@ -1,8 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { RiMenu2Line } from "react-icons/ri";
+import { GoHomeFill } from "react-icons/go";
+import { FaCircleInfo } from "react-icons/fa6";
+import { FaClipboardList } from "react-icons/fa6";
+import { FaCheckCircle, FaHandshakeAltSlash } from "react-icons/fa";
+import { FaCalendar } from "react-icons/fa";
+import { FaGift } from "react-icons/fa6";
+import { FaHandsHelping } from "react-icons/fa";
 
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
@@ -52,44 +57,58 @@ const Navbar = () => {
               onClick={() => {
                 setHamburgerActive(true);
               }}>
-              <GiHamburgerMenu size={25} />
+              <RiMenu2Line size={25} />
             </a>
           </div>
-          {hamburgerActive ? (
-            <div className="absolute top-0 left-0 w-full bg-[#82beff]">
-              <HamburgerNavItem href="#home" text="Home" setHamburgerActive={setHamburgerActive} />
-              <HamburgerNavItem
-                href="#about"
-                text="About"
-                setHamburgerActive={setHamburgerActive}
-              />
-              <HamburgerNavItem
-                href="#rules"
-                text="Rules"
-                setHamburgerActive={setHamburgerActive}
-              />
-              <HamburgerNavItem
-                href="#criteria"
-                text="Criteria"
-                setHamburgerActive={setHamburgerActive}
-              />
-              <HamburgerNavItem
-                href="#schedule"
-                text="Schedule"
-                setHamburgerActive={setHamburgerActive}
-              />
-              <HamburgerNavItem
-                href="#prizes"
-                text="Prizes"
-                setHamburgerActive={setHamburgerActive}
-              />
-              <HamburgerNavItem
-                href="#sponsors"
-                text="Sponsors"
-                setHamburgerActive={setHamburgerActive}
-              />
-            </div>
-          ) : null}
+          <div
+            className={`top-0 left-0 w-[220px] h-screen fixed bg-[#82beff] pt-10 transition-all duration-500 ease-in-out ${
+              hamburgerActive
+                ? "transform translate-x-0 opacity-100"
+                : "transform -translate-x-full opacity-0"
+            }`}>
+            <HamburgerNavItem
+              href="#home"
+              text="Home"
+              setHamburgerActive={setHamburgerActive}
+              Icon={GoHomeFill}
+            />
+            <HamburgerNavItem
+              href="#about"
+              text="About"
+              setHamburgerActive={setHamburgerActive}
+              Icon={FaCircleInfo}
+            />
+            <HamburgerNavItem
+              href="#rules"
+              text="Rules"
+              setHamburgerActive={setHamburgerActive}
+              Icon={FaCheckCircle}
+            />
+            <HamburgerNavItem
+              href="#criteria"
+              text="Criteria"
+              setHamburgerActive={setHamburgerActive}
+              Icon={FaClipboardList}
+            />
+            <HamburgerNavItem
+              href="#schedule"
+              text="Schedule"
+              setHamburgerActive={setHamburgerActive}
+              Icon={FaCalendar}
+            />
+            <HamburgerNavItem
+              href="#prizes"
+              text="Prizes"
+              setHamburgerActive={setHamburgerActive}
+              Icon={FaGift}
+            />
+            <HamburgerNavItem
+              href="#sponsors"
+              text="Sponsors"
+              setHamburgerActive={setHamburgerActive}
+              Icon={FaHandsHelping}
+            />
+          </div>
         </div>
       )}
     </>
@@ -106,14 +125,16 @@ const RegularNavItem = ({ href, text }) => {
   );
 };
 
-const HamburgerNavItem = ({ href, text, setHamburgerActive }) => {
+const HamburgerNavItem = ({ Icon, href, text, setHamburgerActive }) => {
   return (
     <a
       href={href}
       onClick={() => {
         setHamburgerActive(false);
-      }}>
-      <p className="text-center schi-medium cursor-pointer text-md text-[17px] py-3 transition duration-600 hover:text-[rgb(108,169,249)] border-b border-black">
+      }}
+      className="flex items-center mx-8 hover:text-[rgb(108,169,249)]">
+      {Icon && <Icon size={18} className="mr-4" />}
+      <p className="schi-medium cursor-pointer text-md text-[17px] py-3 transition duration-600">
         {text}
       </p>
     </a>

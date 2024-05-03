@@ -1,5 +1,4 @@
 import React from "react";
-import AboutCard from "@components/elements/AboutCard";
 import { IoBuild } from "react-icons/io5";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { IoMedalSharp } from "react-icons/io5";
@@ -27,6 +26,16 @@ const About = () => {
           content="Submit your creation for evaluation and win prizes!"
         />
       </div>
+    </div>
+  );
+};
+
+const AboutCard = ({ icon, header, content }) => {
+  return (
+    <div className="w-[240px] flex flex-col items-center justify-center m-5">
+      {icon({ className: "text-5xl" })}
+      <p className="schi-bold text-center text-xl mb-1 mt-4">{header}</p>
+      <p className="text-center schi-medium text-xl">{content}</p>
     </div>
   );
 };
