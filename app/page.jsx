@@ -1,5 +1,4 @@
 import NavBar from "@components/sections/NavBar";
-import Bubbles from "@components/elements/Bubbles";
 import Home from "@components/sections/Home";
 import About from "@components/sections/About";
 import Sponsors from "@components/sections/Sponsors";
@@ -11,15 +10,14 @@ import Schedule from "@components/sections/Schedule";
 const App = () => {
   return (
     <div className="full-page-cont">
-      {/* <Bubbles /> */}
       <NavBar />
       <Home />
       <About />
-      {/* <Rules />
+      <Rules />
       <Criteria />
       <Schedule />
       <Prizes />
-      <Sponsors /> */}
+      <Sponsors />
     </div>
   );
 };

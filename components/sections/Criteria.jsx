@@ -1,39 +1,42 @@
 import React from "react";
 import Image from "next/image";
+import ListCard from "@components/elements/ListCard";
+import {
+  PiNumberCircleOneFill,
+  PiNumberCircleTwoFill,
+  PiNumberCircleThreeFill,
+  PiNumberCircleFourFill,
+} from "react-icons/pi";
 
 const Criteria = () => {
   return (
-    <div className="lower-page-outer-cont">
-      <div className="flex flex-col items-center justify-center">
-        <p className="header-text">Judging Criteria</p>
-        <div className="criteria-cont">
-          <Image
-            priority={true}
-            src="/criteria/criteria1_frame.png"
-            width={450}
-            height={150}
-            alt="First criteria for hackathon project judgement. How unique is your idea or the execution of your idea? Has anyone done this or approached it the way you did?"
+    <div
+      id="criteria"
+      className="py-16 flex flex-col items-center justify-center bg-[rgb(120,178,254)]">
+      <p className="text-[26px] schi-bold text-center mb-4">Judging Criteria</p>
+      <div className="flex flex-col lg:flex-row">
+        <div>
+          <ListCard
+            header="Creativity"
+            content="How unique is your idea or the execution of your idea? Has anyone does this or approached it the way you did?"
+            Icon={PiNumberCircleOneFill}
           />
-          <Image
-            priority={true}
-            src="/criteria/criteria2_frame.png"
-            width={450}
-            height={150}
-            alt="Second criteria for hackathon project judgement. How complete is your project? Can it wholly perform a function? Is it a minimum viable product (MVP)?"
+          <ListCard
+            header="Completeness"
+            content="How complete is your project? Can it wholly perform a function? Is it MVP (minimum viable product)?"
+            Icon={PiNumberCircleTwoFill}
           />
-          <Image
-            priority={true}
-            src="/criteria/criteria3_frame.png"
-            width={450}
-            height={150}
-            alt="Third criteria for hackathon project judgement. How impactful is your project? Does it positively affect other people's lives in any way?"
+        </div>
+        <div>
+          <ListCard
+            header="Impactfulness"
+            content="How impactful is your project? Does it positively affect others peoples' lives in any way?Would other people use it?"
+            Icon={PiNumberCircleThreeFill}
           />
-          <Image
-            priority={true}
-            src="/criteria/criteria4_frame.png"
-            width={450}
-            height={150}
-            alt="Fourth criteria for hackathon project judgement. Is your project technically advanced? Was it challenging and time consuming to design?"
+          <ListCard
+            header="Complexity"
+            content="Is your project technically advanced? Was it challenging and time consuming to design?"
+            Icon={PiNumberCircleFourFill}
           />
         </div>
       </div>

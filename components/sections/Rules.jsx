@@ -1,39 +1,40 @@
 import React from "react";
 import Image from "next/image";
+import ListCard from "@components/elements/ListCard";
+import {
+  PiNumberCircleOneFill,
+  PiNumberCircleTwoFill,
+  PiNumberCircleThreeFill,
+  PiNumberCircleFourFill,
+} from "react-icons/pi";
 
 const Rules = () => {
   return (
-    <div className="lower-page-outer-cont">
-      <div className="flex flex-col items-center justify-center">
-        <p className="header-text">Hackathon Rules</p>
-        <div className="rules-cont">
-          <Image
-            priority={true}
-            src="/rules/rule1_frame.png"
-            width={450}
-            height={150}
-            alt="First rule for appropriate hackathon conduct. Build something that can impact others. Take this any way you want - education, finance, productivity, organization, etc. Be creative!"
+    <div id="rules" className="py-16 flex flex-col items-center justify-center">
+      <p className="text-[26px] schi-bold text-center mb-4">Hackathon Rules</p>
+      <div className="flex flex-col lg:flex-row">
+        <div>
+          <ListCard
+            header="Stay on theme"
+            content="Build something that can positively impact others. Take this any way you want - education, finance, productivity, organization, etc. Be creative."
+            Icon={PiNumberCircleOneFill}
           />
-          <Image
-            priority={true}
-            src="/rules/rule2_frame.png"
-            width={450}
-            height={150}
-            alt="Second rule for appropriate hackathon conduct. Complete your project before the submission deadline of September 17th. Late projects may not be considered for prizes."
+          <ListCard
+            header="Stay on time"
+            content="Complete your project in its entiriety before the submission deadline listed below."
+            Icon={PiNumberCircleTwoFill}
           />
-          <Image
-            priority={true}
-            src="/rules/rule3_frame.png"
-            width={450}
-            height={150}
-            alt="Third rule for appropriate hackathon conduct. You must present your work with judges in at least one of the specified formats found on our Devpost page."
+        </div>
+        <div>
+          <ListCard
+            header="Present your work"
+            content="You must present your work through a video showcase or presentation. Sending a link to your creation is optional but highly recommended."
+            Icon={PiNumberCircleThreeFill}
           />
-          <Image
-            priority={true}
-            src="/rules/rule4_frame.png"
-            width={450}
-            height={150}
-            alt="Fourth rule for appropriate hackathon conduct. Do not receive unauthorized help. This includes copying substantial amounts of code from the internet and from AIs."
+          <ListCard
+            header="Use your own code"
+            content="Do not receive unauthorized help. This includes copying substantial amounts of code from the internet and from generative AIs."
+            Icon={PiNumberCircleFourFill}
           />
         </div>
       </div>
