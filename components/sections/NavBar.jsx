@@ -61,7 +61,13 @@ const Navbar = () => {
             </a>
           </div>
           <div
-            className={`top-0 left-0 w-[220px] h-screen fixed bg-[#82beff] pt-10 transition-all duration-500 ease-in-out ${
+            className={`fixed inset-0 bg-gray-500 transition-all duration-500 ease-in-out ${
+              hamburgerActive ? "opacity-50" : "opacity-0 pointer-events-none"
+            }`}
+            onClick={() => setHamburgerActive(false)}
+          />
+          <div
+            className={`top-0 left-0 w-[220px] h-screen fixed bg-[#82beff] pt-8 transition-all duration-500 ease-in-out ${
               hamburgerActive
                 ? "transform translate-x-0 opacity-100"
                 : "transform -translate-x-full opacity-0"
@@ -133,8 +139,8 @@ const HamburgerNavItem = ({ Icon, href, text, setHamburgerActive }) => {
         setHamburgerActive(false);
       }}
       className="flex items-center mx-8 hover:text-[rgb(108,169,249)]">
-      {Icon && <Icon size={18} className="mr-4" />}
-      <p className="schi-medium cursor-pointer text-md text-[17px] py-3 transition duration-600">
+      {Icon && <Icon size={16} className="mr-4" />}
+      <p className="schi-medium cursor-pointer text-md py-3 transition duration-600">
         {text}
       </p>
     </a>
