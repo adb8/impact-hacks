@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
         <link
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.ico" />
       </head>
       <body>{children}</body>
     </html>
